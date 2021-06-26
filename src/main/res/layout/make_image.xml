@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <Button
+        android:id="@+id/backButton1"
+        android:layout_width="120dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="20dp"
+        android:onClick="handleBackButton"
+        android:text="Go Back"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/undoButton"
+        android:layout_width="120dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="40dp"
+        android:layout_marginRight="40dp"
+        android:onClick="handleUndo"
+        android:text="Undo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="304dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="90dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginRight="20dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:id="@+id/drawWrap"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+            <view
+                android:id="@+id/draw"
+                class="com.example.anonymousgraffiti.DrawView"
+                id="@+id/view2"
+                android:layout_width="200dp"
+                android:layout_height="300dp"
+                android:layout_weight="1" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <!--- These buttons do absolutely nothing right now -->
+                <Button
+                    android:id="@+id/red"
+                    android:layout_width="50dp"
+                    android:layout_height="40dp"
+                    android:background="#FF0000"
+                    android:onClick="changeColor" />
+
+                <Button
+                    android:id="@+id/yellow"
+                    android:layout_width="50dp"
+                    android:layout_height="40dp"
+                    android:background="#FFFFFB00"
+                    android:onClick="changeColor" />
+
+                <Button
+                    android:id="@+id/green"
+                    android:layout_width="50dp"
+                    android:layout_height="40dp"
+                    android:background="#00FF00"
+                    android:onClick="changeColor" />
+
+                <Button
+                    android:id="@+id/blue"
+                    android:layout_width="50dp"
+                    android:layout_height="40dp"
+                    android:background="#0000FF"
+                    android:onClick="changeColor" />
+
+                <Button
+                    android:id="@+id/magenta"
+                    android:layout_width="50dp"
+                    android:layout_height="40dp"
+                    android:background="#FFCC00FF"
+                    android:onClick="changeColor" />
+
+                <Button
+                    android:id="@+id/white"
+                    android:layout_width="50dp"
+                    android:layout_height="40dp"
+                    android:background="#FFFFFF"
+                    android:onClick="changeColor" />
+
+                <Button
+                    android:id="@+id/black"
+                    android:layout_width="50dp"
+                    android:layout_height="40dp"
+                    android:background="#000000"
+                    android:onClick="changeColor" />
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <SeekBar
+        android:id="@+id/lineWidth"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="395dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <LinearLayout
+        android:layout_width="292dp"
+        android:layout_height="49dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:orientation="horizontal"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lineWidth">
+
+        <Button
+            android:id="@+id/takeImageButton"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:onClick="addImage"
+            android:text="Take Photo" />
+
+        <Button
+            android:id="@+id/saveImageButton"
+            android:layout_width="70dp"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:onClick="saveImage"
+            android:text="Save Image" />
+
+    </LinearLayout>
+
+
+</android.support.constraint.ConstraintLayout>
