@@ -1,6 +1,6 @@
 # Anonymous-Graffiti
 
-A Mobile app for taking photos and sharing them with your friends! Built as a final project with one partner for UNC's Mobile Computing Systems class.
+A Java Android app for taking photos, editing them, and sharing them with your community! Built as a final project with one partner for UNC's Mobile Computing Systems class.
 
 
 <img width="315" alt="Homepage" src="https://user-images.githubusercontent.com/25047954/123501276-c0101680-d611-11eb-9a6c-2a99840a5506.png">
