@@ -10,3 +10,5 @@ Employs a SQLite database to store photos, edits, long/lat, etc. Uses Google Loc
 <img width="315" alt="Make Photo" src="https://user-images.githubusercontent.com/25047954/123501278-c43c3400-d611-11eb-9d6c-b0b4e40f3cca.png">
 
 <img width="315" alt="Draw" src="https://user-images.githubusercontent.com/25047954/123501279-c56d6100-d611-11eb-8f53-3dfb78e3db1b.png">
+
+&copy; 2021 [Will](https://github.com/WillBerner)
